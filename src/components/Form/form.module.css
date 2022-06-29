@@ -1,0 +1,93 @@
+.form__wrp {
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.form__title {
+  text-align: center;
+}
+.email {
+}
+.name {
+}
+.text {
+  width: 30%;
+  height: 30%;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  border: 1px solid rgba(112, 13, 193, 0.459);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.label {
+  margin: 20px;
+}
+
+input {
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid rgba(112, 13, 193, 0.459);
+  border-radius: 16px;
+  padding: 5px;
+}
+
+.form__button {
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.form__button:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.form__button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.form__button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.buttons__wrp {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
