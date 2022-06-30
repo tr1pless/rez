@@ -1,5 +1,6 @@
 .form__wrp {
   height: 100vh;
+  margin: 0;
 }
 
 .form {
@@ -16,6 +17,7 @@
 .name {
 }
 .text {
+  margin-top: 10px;
   width: 30%;
   height: 30%;
   font-size: 17px;
@@ -35,6 +37,7 @@ input {
   border: 1px solid rgba(112, 13, 193, 0.459);
   border-radius: 16px;
   padding: 5px;
+  width: 45%;
 }
 
 .form__button {
@@ -90,4 +93,12 @@ input {
   width: 15%;
   justify-content: space-between;
   margin-top: 30px;
+}
+
+.names__wrp,
+.contacts__wrp {
+  width: 31%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px;
 }

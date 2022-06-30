@@ -36,7 +36,6 @@ export const About = () => {
           </ul>
         </div>
       </div>
-      <hr style={{ margin: 0 }} />
     </>
   );
 };

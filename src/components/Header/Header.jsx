@@ -32,9 +32,19 @@ export const Header = () => {
               About
             </Link>
           </li>
-          {/* <li className={styles.navItem}>Section 3</li> */}
-          {/* <li className={styles.navItem}>Section 4</li> */}
-          {/* <li className={styles.navItem}>Section 5</li> */}
+          <li className={`${styles.navItem} ${styles.navContact}`}>
+            <Link
+              className={styles.link}
+              activeClass="active"
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </header>
     </>
