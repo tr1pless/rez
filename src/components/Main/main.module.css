@@ -4,6 +4,13 @@
   font-size: 20px;
 }
 
+.welcome__link:hover i {
+  transform: rotate(90deg);
+}
+i {
+  transition: 0.5s;
+}
+
 .welcome__text__span {
   margin: auto 5px auto 5px;
 }
@@ -78,4 +85,25 @@
 
 .main__box:hover {
   transform: scale(1.1);
+}
+
+.custom__shape__divider__bottom__1657712270 {
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom__shape__divider__bottom__1657712270 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 44px;
+  transform: rotateY(180deg);
+}
+
+.custom__shape__divider__bottom__1657712270 .shape__fill {
+  fill: #010213;
 }

@@ -5,14 +5,20 @@ import { Form } from "./Form/Form";
 import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
 
+import { wrapperStyle } from "./Constants";
+
 export const AppRouter = () => {
   return (
     <>
-      <Header />
-      <Main />
-      <About />
-      <Form />
-      <Footer />
+      <div>
+        <Header />
+        <Main />
+        <div style={wrapperStyle}>
+          <About />
+          <Form />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 };

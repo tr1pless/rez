@@ -10,6 +10,7 @@
   height: 100%;
 }
 .form__title {
+  padding-top: 17vh;
   text-align: center;
 }
 .email {

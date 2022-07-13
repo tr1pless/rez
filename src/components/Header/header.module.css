@@ -3,34 +3,60 @@
   position: fixed;
   width: 100%;
   height: 8vh;
-  background: #1c322b;
-  border-bottom: 1px solid #363664;
+  /* background: #1c322b; */
+  /* border-bottom: 1px solid #363664; */
 }
 
 .navBar {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
 }
 
 .navItem {
-  margin: auto, 0;
   list-style-type: none;
   transition: 1;
+  z-index: 2;
+  margin: auto 30px auto 0;
 }
 
 .navItem:hover {
   color: #a3488e;
 }
 
-.navMain {
+/* .navMain { */
+/* position: absolute; */
+/* top: 4%; */
+/* right: 3%; */
+/* } */
+/*  */
+/* .navAbout { */
+/* position: absolute; */
+/* top: 4%; */
+/* right: 8%; */
+/* } */
+
+.custom__shape__divider__top__1657714827 {
   position: absolute;
-  top: 4%;
-  right: 3%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom__shape__divider__top__1657714827 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 99px;
 }
 
-.navAbout {
-  position: absolute;
-  top: 4%;
-  right: 8%;
+.custom__shape__divider__top__1657714827 .shape__fill {
+  fill: rgb(47 32 51);
+}
+
+.active {
+  transition: 0.5s;
+  color: blue;
 }
