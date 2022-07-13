@@ -1,6 +1,7 @@
 {
   "name": "pf",
   "version": "0.1.0",
+  "homepage": "https://gitname.github.io/react-gh-pages",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -27,6 +28,8 @@
     "start": "webpack serve --mode=development",
     "build": "webpack --mode=production",
     "build-prod": "webpack --mode=production",
+    "predeploy": "npm run build",
+    n"deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
