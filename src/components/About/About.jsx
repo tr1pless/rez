@@ -2,11 +2,12 @@ import React from "react";
 import styles from "./about.module.css";
 import { Link } from "react-scroll";
 import ScrollAnimation from "react-animate-on-scroll";
+import { wrapperStyle } from "../Constants";
 
 export const About = () => {
   return (
     <>
-      <div id="About" className={styles.about__wrp}>
+      <div style={wrapperStyle} id="About" className={styles.about__wrp}>
         <div className={styles.custom__shape__divider__top__1657712595}>
           <svg
             data-name="Layer 1"
@@ -20,7 +21,6 @@ export const About = () => {
             ></path>
           </svg>
         </div>
-
         <div className={styles.about}>
           <ScrollAnimation
             offset={50}
@@ -45,7 +45,6 @@ export const About = () => {
             </p>
           </ScrollAnimation>
         </div>
-
         <div className={styles.skills}>
           <ScrollAnimation
             offset={50}
@@ -126,6 +125,7 @@ export const About = () => {
             </p>
           </Link>
         </div>
+        __
       </div>
     </>
   );

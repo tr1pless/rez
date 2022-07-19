@@ -1,82 +1,146 @@
 import React, { useState } from "react";
 import styles from "./form.module.css";
-import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
+import emailjs from "emailjs-com";
+import ScrollAnimation from "react-animate-on-scroll";
 
-export const Form = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data, errors);
+const SERVICE_ID = "service_7pi8i2c";
+const TEMPLATE_ID = "template_f6sv8v7";
+const USER_ID = "TR5PHEAy4hnjGz-gg";
 
-  const [name, setName] = useState("");
-  const [lName, setLName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [message, setMessage] = useState("");
+export const FormComponent = () => {
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent Successfully",
+        });
+      },
+      (error) => {
+        console.log(error.text);
+        Swal.fire({
+          icon: "error",
+          title: "Ooops, something went wrong",
+          text: error.text,
+        });
+      }
+    );
+    e.target.reset();
+  };
 
   return (
     <div id="Contact" className={styles.form__wrp}>
-      <h1 className={styles.form__title}>
-        Use this form to send me a message.
-      </h1>
-      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-        <div className={styles.names__wrp}>
-          <input
-            onChange={(e) => setName(e.target.value)}
-            value={name}
-            id="name"
-            type="text"
-            placeholder="First name"
-            {...register("First name", { required: true, maxLength: 80 })}
-          />
-          <input
-            onChange={(e) => setLName(e.target.value)}
-            value={lName}
-            id="lName"
-            type="text"
-            placeholder="Last name"
-            {...register("Last name", { required: true, maxLength: 100 })}
-          />
+      <div className={styles.custom__shape__divider__top__1657791939}>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M1200 0L0 0 598.97 114.72 1200 0z"
+            className={styles.shape__fill}
+          ></path>
+        </svg>
+      </div>
+      <ScrollAnimation
+        offset={50}
+        animateIn="fadeIn"
+        animateOnce={true}
+        delay={500}
+        duration={2}
+      >
+        <h1 className={`${styles.form__title} ${styles.text}`}>
+          Use this form to send me a message.{" "}
+        </h1>
+      </ScrollAnimation>
+
+      <form className={styles.form} onSubmit={handleOnSubmit}>
+        <div className={styles.emailNameWrp}>
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeIn"
+            animateOnce={true}
+            delay={700}
+            duration={2}
+          >
+            <div className={`${styles.emailWrp} ${styles.text}`}>
+              <label htmlFor="form-input-control-email">E-Mail</label>
+              <input
+                className={`${styles.email} ${styles.inputs} ${styles.text}`}
+                id="form-input-control-email"
+                name="user_email"
+                required
+              />
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeIn"
+            animateOnce={true}
+            delay={900}
+            duration={2}
+          >
+            <div className={`${styles.nameWrp} ${styles.text}`}>
+              <label htmlFor="form-input-control-last-name">Full name</label>
+              <input
+                className={`${styles.name} ${styles.inputs} ${styles.text}`}
+                style={{ backgroundColor: "transparent" }}
+                id="form-input-control-last-name"
+                name="user_name"
+                required
+              />
+            </div>
+          </ScrollAnimation>
         </div>
-        <div className={styles.contacts__wrp}>
-          <input
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            className={styles.email}
-            id="email"
-            type="text"
-            placeholder="Email"
-            {...register("Email", { required: true, pattern: /^\S+@\S+$/i })}
+        <ScrollAnimation
+          className={`${styles.textArea__animation} ${styles.text}`}
+          offset={50}
+          animateIn="fadeIn"
+          animateOnce={true}
+          delay={1300}
+          duration={2}
+        >
+          <label
+            style={{ margin: "0 20px 20px 20px" }}
+            htmlFor="form-textarea-control-opinion"
+          >
+            Message
+          </label>
+          <textarea
+            className={`${styles.textArea}  ${styles.text}`}
+            id="form-textarea-control-opinion"
+            name="user_message"
+            required
           />
-          <input
-            value={number}
-            id="number"
-            onChange={(e) => setNumber(e.target.value)}
-            type="number"
-            placeholder="Phone number"
-            {...register("Phone number", { maxLength: 12 })}
-          />
-        </div>
-        <textarea
-          value={message}
-          className={styles.text}
-          id="message"
-          onChange={(e) => setMessage(e.target.value)}
-          {...register("Text", { required: true })}
-        />
+        </ScrollAnimation>
 
         <div className={styles.buttons__wrp}>
-          <button
-            onClick={(e) => {
-              handleSubmit(e);
-            }}
-            className={styles.form__button}
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeIn"
+            animateOnce={true}
+            delay={1500}
+            duration={2}
           >
-            Submit
-          </button>
-          <button className={styles.form__button}>Clear</button>
+            <button type="submit" className={styles.submitBtn}>
+              <span className={styles.submitBtn__span}>Send a message!</span>
+            </button>
+          </ScrollAnimation>
+          <ScrollAnimation
+            offset={50}
+            animateIn="fadeIn"
+            animateOnce={true}
+            delay={1700}
+            duration={2}
+          >
+            <button type="reset" className={styles.resetBtn}>
+              <span className={styles.resetBtn__span}>Clear</span>
+            </button>
+          </ScrollAnimation>
         </div>
       </form>
     </div>

@@ -4,7 +4,7 @@ export const mainStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundImage: `url('images/wpMain.jpg')`,
+  backgroundImage: `url('../images/wpMain.jpg')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   height: "100vh",
@@ -13,10 +13,17 @@ export const mainStyle = {
 };
 
 export const wrapperStyle = {
-  backgroundImage: `url('images/background.jpg')`,
+  backgroundImage: `url('../images/aboutBackground.jpg')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
   margin: "0",
   padding: "0",
+};
+
+export const formStyle = {
+  backgroundImage: `url('../images/formBackground.gif')`,
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
 };

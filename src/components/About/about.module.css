@@ -8,17 +8,16 @@
 .about {
   margin: 90px 0px 0 80px;
   width: 32%;
-  /* border: solid 1px black; */
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 60%;
 }
 .about__title {
-  color: white;
+  color: #129a76;
 }
 .about__text {
-  color: white;
+  color: #129a76;
   width: 90%;
   text-align: center;
 }
@@ -28,12 +27,12 @@
   margin: 100px;
 }
 .skills__title {
-  color: white;
+  color: #129a76;
   margin: 20px;
 }
 .skills__list__item {
   list-style-type: none;
-  color: white;
+  color: #129a76;
   padding: 3px 0 3px 5px;
   margin: 5px;
   width: 200px;
@@ -91,7 +90,7 @@
 }
 
 .contact__text {
-  color: white;
+  color: #129a76;
   margin: 4px 0;
   font-size: 20px;
 }
