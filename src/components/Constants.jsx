@@ -1,10 +1,11 @@
 import React from "react";
+
 export const mainStyle = {
   paddingBot: "100%",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundImage: `url('../images/wpMain.jpg')`,
+  backgroundImage: `url('./images/wpMain.jpg')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   height: "100vh",
@@ -13,7 +14,7 @@ export const mainStyle = {
 };
 
 export const wrapperStyle = {
-  backgroundImage: `url('../images/aboutBackground.jpg')`,
+  backgroundImage: `url('./images/aboutBackground.jpg')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
@@ -22,7 +23,7 @@ export const wrapperStyle = {
 };
 
 export const formStyle = {
-  backgroundImage: `url('../images/formBackground.gif')`,
+  backgroundImage: `url('./images/formBackground.gif')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
