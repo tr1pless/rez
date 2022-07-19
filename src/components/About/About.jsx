@@ -125,7 +125,6 @@ export const About = () => {
             </p>
           </Link>
         </div>
-        __
       </div>
     </>
   );
