@@ -1,0 +1,128 @@
+.skillsWrp {
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(170, 181, 195, 1) 49%,
+    rgba(136, 134, 242, 1) 100%
+  );
+}
+.listsWrp {
+  margin-top: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.skills {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: flex-end; */
+  border: 2px solid black;
+  padding: 0 15px 5px;
+}
+
+.skills__title {
+  color: #129a76;
+  /* margin: 20px; */
+  /* transform: rotate(-90deg); */
+  /* transform-origin: left top 0; */
+}
+.skills__list__item {
+  list-style-type: none;
+  color: #129a76;
+  padding: 3px 0 3px 5px;
+  margin: 5px;
+  width: 200px;
+}
+.linkWrp {
+  display: flex;
+  position: absolute;
+  top: 80vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.skills__list {
+  padding: 0;
+}
+.languagesItem {
+  list-style-type: none;
+  margin: 35px 0 10px 0;
+}
+.contact__link {
+  padding: 4px 8px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+.contact__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.contact__link:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.contact__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.contact__link:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.contact__link:hover i {
+  transform: rotate(90deg);
+}
+
+.contact__text {
+  color: #129a76;
+  margin: 4px 0;
+  font-size: 20px;
+}
+
+i {
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.custom-shape-divider-top-1658322684 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom__shape__divider__top__1658322684 svg {
+  position: relative;
+  display: block;
+  width: calc(116% + 1.3px);
+  height: 22px;
+}
+
+.custom__shape__divider__top__1658322684 .shape__fill {
+  fill: #2f2033;
+}

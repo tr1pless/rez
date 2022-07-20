@@ -16,7 +16,8 @@ export const FormComponent = () => {
         console.log(result.text);
         Swal.fire({
           icon: "success",
-          title: "Message Sent Successfully",
+          title:
+            "Thank you for your message, i will answer you as soon as possible",
         });
       },
       (error) => {

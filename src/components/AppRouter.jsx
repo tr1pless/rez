@@ -4,6 +4,7 @@ import { Footer } from "./Footer/Footers";
 import { FormComponent } from "./Form/Form";
 import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
+import { Skills } from "./Skills/Skills";
 
 export const AppRouter = () => {
   return (
@@ -11,6 +12,7 @@ export const AppRouter = () => {
       <Header />
       <Main />
       <About />
+      <Skills />
       <FormComponent />
       <Footer />
     </>

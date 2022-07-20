@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./header.module.css";
 import { Link } from "react-scroll";
+import Scrollspy from "react-scrollspy";
 
 export const Header = () => {
   return (
@@ -29,46 +30,67 @@ export const Header = () => {
             ></path>
           </svg>
         </div>
-
         <ul className={styles.navBar}>
           <li className={`${styles.navItem} ${styles.navMain}`}>
             <Link
-              activeClass="active"
+              className={styles.link}
+              activeClass={styles.active}
               to="Main"
               spy={true}
+              hashSpy={true}
               smooth={true}
               offset={0}
               duration={500}
             >
-              Main
+              HOME
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.navAbout}`}>
             <Link
               className={styles.link}
-              activeClass="active"
+              activeClass={styles.active}
               to="About"
               spy={true}
+              hashSpy={true}
               smooth={true}
               offset={0}
               duration={500}
               isDynamic={true}
             >
-              About
+              ABOUT
             </Link>
           </li>
           <li className={`${styles.navItem} ${styles.navContact}`}>
             <Link
               className={styles.link}
-              activeClass="active"
+              activeClass={styles.active}
               to="Contact"
               spy={true}
+              hashSpy={true}
               smooth={true}
               offset={0}
               duration={500}
             >
-              Contact
+              CONTACT
             </Link>
+          </li>
+          <li className={`${styles.navItem} ${styles.navContact}`}>
+            <Link
+              className={styles.link}
+              activeClass={styles.active}
+              to="Social"
+              spy={true}
+              smooth={true}
+              offset={-280}
+              duration={500}
+            >
+              LINKS
+            </Link>
+            <img
+              className={styles.headerLogo}
+              src="/images/headerLogo.png"
+              alt="logo"
+            ></img>
           </li>
         </ul>
       </header>
