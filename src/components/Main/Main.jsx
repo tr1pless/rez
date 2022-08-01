@@ -19,7 +19,7 @@ export const Main = () => {
             to="About"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={2}
             duration={500}
           >
             <p className={styles.welcome__text}>

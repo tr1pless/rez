@@ -43,7 +43,7 @@ export const Skills = () => {
                 <li className={styles.skills__list__item}>
                   <img
                     style={{ width: "25px", marginRight: "5px" }}
-                    src="/images/htmlcss.svg "
+                    src="../images/htmlcss.svg "
                   ></img>
                   HTML + CSS
                 </li>
@@ -58,7 +58,7 @@ export const Skills = () => {
                 <li className={styles.skills__list__item}>
                   <img
                     style={{ width: "25px", marginRight: "5px" }}
-                    src="/images/js.svg "
+                    src="../images/js.svg "
                   ></img>
                   JavaScript
                 </li>
@@ -73,7 +73,7 @@ export const Skills = () => {
                 <li className={styles.skills__list__item}>
                   <img
                     style={{ width: "25px", marginRight: "5px" }}
-                    src="/images/react.svg "
+                    src="../images/react.svg "
                   ></img>
                   React.js
                 </li>
@@ -88,7 +88,7 @@ export const Skills = () => {
                 <li className={styles.skills__list__item}>
                   <img
                     style={{ width: "25px", marginRight: "5px" }}
-                    src="/images/redux.svg "
+                    src="../images/redux.svg "
                   ></img>
                   React Redux + Router
                 </li>
@@ -124,24 +124,6 @@ export const Skills = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className={styles.linkWrp}>
-          <Link
-            className={styles.contact__link}
-            activeClass="active"
-            to="Contact"
-            hashSpy={true}
-            smooth={true}
-            offset={0}
-            duration={500}
-          >
-            <p className={styles.contact__text}>
-              Contact me
-              <span>
-                <i className="fa-solid fa-arrow-right"></i>
-              </span>
-            </p>
-          </Link>
         </div>
       </div>
     </>

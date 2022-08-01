@@ -5,16 +5,19 @@ import { FormComponent } from "./Form/Form";
 import { Header } from "./Header/Header";
 import { Main } from "./Main/Main";
 import { Skills } from "./Skills/Skills";
+import styles from "./appRouter.module.css";
 
 export const AppRouter = () => {
   return (
     <>
       <Header />
       <Main />
-      <About />
-      <Skills />
-      <FormComponent />
-      <Footer />
+      <div className={styles.backgroundWrp}>
+        <About />
+        {/* <Skills /> */}
+        <FormComponent />
+        <Footer />
+      </div>
     </>
   );
 };

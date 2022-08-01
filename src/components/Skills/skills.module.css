@@ -34,66 +34,14 @@
   margin: 5px;
   width: 200px;
 }
-.linkWrp {
-  display: flex;
-  position: absolute;
-  top: 80vh;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
+
 .skills__list {
   padding: 0;
+  width: 60%;
 }
 .languagesItem {
   list-style-type: none;
   margin: 35px 0 10px 0;
-}
-.contact__link {
-  padding: 4px 8px;
-  margin: 0 auto;
-  border: none;
-  border-radius: 0;
-  background: none;
-  color: #fff;
-  transition: all 0.5s;
-  position: relative;
-}
-.contact__link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: all 0.3s;
-}
-.contact__link:hover::before {
-  opacity: 0;
-  transform: scale(0.5, 0.5);
-}
-.contact__link::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  transform: scale(1.2, 1.2);
-}
-.contact__link:hover::after {
-  opacity: 1;
-  transform: scale(1, 1);
-}
-.contact__link:hover i {
-  transform: rotate(90deg);
 }
 
 .contact__text {

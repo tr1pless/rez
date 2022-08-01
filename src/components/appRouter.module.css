@@ -1,0 +1,9 @@
+.backgroundWrp {
+  background: linear-gradient(
+    90deg,
+    rgb(37 23 40) 5%,
+    rgba(13, 0, 36, 0.8970938717283788) 54%,
+    rgb(8 22 54) 100%
+  );
+  margin-top: -2px;
+}

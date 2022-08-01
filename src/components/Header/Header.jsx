@@ -68,7 +68,7 @@ export const Header = () => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={0}
+              offset={5}
               duration={500}
             >
               CONTACT
@@ -81,7 +81,7 @@ export const Header = () => {
               to="Social"
               spy={true}
               smooth={true}
-              offset={-280}
+              offset={10}
               duration={500}
             >
               LINKS

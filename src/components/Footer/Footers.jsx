@@ -28,6 +28,10 @@ export const Footer = () => {
             </svg>
           </Link>
         </div>
+        <p className={styles.footer__text}>
+          You can use these links to hire me or invite in your project. I'm glad
+          to become a part of your team and gain more new experience.
+        </p>
         <div className={styles.links__wrapper}>
           <ScrollAnimation
             offset={50}
