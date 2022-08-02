@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./header.module.css";
 import { Link } from "react-scroll";
-import Scrollspy from "react-scrollspy";
 
 export const Header = () => {
   return (
@@ -88,7 +87,7 @@ export const Header = () => {
             </Link>
             <img
               className={styles.headerLogo}
-              src="/images/headerLogo.png"
+              src="./images/headerLogo.png"
               alt="logo"
             ></img>
           </li>
