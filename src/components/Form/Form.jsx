@@ -3,6 +3,7 @@ import styles from "./form.module.css";
 import Swal from "sweetalert2";
 import emailjs from "emailjs-com";
 import ScrollAnimation from "react-animate-on-scroll";
+import { formStyle } from "../Constants";
 
 const SERVICE_ID = "service_7pi8i2c";
 const TEMPLATE_ID = "template_f6sv8v7";
@@ -108,6 +109,7 @@ export const FormComponent = () => {
 
         <div className={styles.buttons__wrp}>
           <ScrollAnimation
+            className={styles.form__buttonsAni}
             offset={50}
             animateIn="fadeIn"
             animateOnce={true}
@@ -119,6 +121,7 @@ export const FormComponent = () => {
             </button>
           </ScrollAnimation>
           <ScrollAnimation
+            className={styles.form__buttonsAni}
             offset={50}
             animateIn="fadeIn"
             animateOnce={true}
