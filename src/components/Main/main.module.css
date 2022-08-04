@@ -107,3 +107,25 @@ i {
 .custom__shape__divider__bottom__1657712270 .shape__fill {
   fill: #010213;
 }
+@media screen and (max-width: 1024px) {
+  .main__box {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__box {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 625px) {
+  .main__text {
+    font-size: 15px;
+  }
+  .main__text__span {
+    font-size: 18px;
+  }
+  .main__box {
+    height: 40%;
+  }
+}

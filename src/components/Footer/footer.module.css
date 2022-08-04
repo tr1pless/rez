@@ -124,3 +124,24 @@ footer {
 .footer__nameSpan {
   color: #9d3132;
 }
+@media screen and (max-width: 1024px) {
+  .footer__bottomBg .footer__botomBg__img {
+    height: 120px;
+  }
+  .imageWrp {
+    padding: 7px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__bottomBg .footer__botomBg__img {
+    height: 100px;
+    padding: 7px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .footer__text {
+    font-size: 19px;
+    width: 90%;
+  }
+}

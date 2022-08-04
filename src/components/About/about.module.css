@@ -9,7 +9,7 @@
 }
 
 .container {
-  margin-top: 8%;
+  margin-top: 3%;
   width: 100%;
   background: rgba(182, 81, 81, 0.15);
   border: 2px solid #190d0d;
@@ -25,6 +25,7 @@
 }
 .skills__wrp {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-around;
 }
 .skills {
@@ -37,7 +38,7 @@
   z-index: 1;
   height: 100%;
   left: 0;
-  animation: wipe 4s 2s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
+  animation: wipe 2s 2s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
 }
 @keyframes wipe {
   0% {
@@ -63,7 +64,8 @@
   z-index: 2;
 }
 .skills__list {
-  width: 45%;
+  width: 90%;
+  margin: 30px 5% 20px;
 }
 
 .html {
@@ -101,7 +103,7 @@
 }
 .features {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: center;
 }
@@ -250,4 +252,119 @@
 .contact__link:hover i {
   transform: rotate(90deg);
   color: #177464;
+}
+
+@media screen and (max-width: 1024px) {
+  .about__title {
+    font-size: 21px;
+  }
+  .about__text {
+    font-size: 16px;
+    width: 80%;
+    text-align: center;
+  }
+  .about__text__wrp {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutCard {
+    width: 250px;
+    height: 120px;
+  }
+  .cardText {
+    padding: 13px 15px 0;
+    color: #0d0c2f;
+    font-size: 15px;
+  }
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .container {
+    margin-top: 3%;
+  }
+  .skills__text {
+    font-size: 14px;
+    padding: 3px;
+  }
+  .skills__span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about__wrp {
+    height: 115vh;
+  }
+  .linkWrp {
+    top: 105vh;
+  }
+  .about__title {
+    font-size: 20px;
+  }
+  .about__text {
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+  }
+  .about__text__wrp {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutCard {
+    width: 240px;
+    height: 120px;
+  }
+  .cardText {
+    padding: 11px 15px 0;
+    color: #0d0c2f;
+    font-size: 14px;
+  }
+  .cardTitle {
+    font-size: 19px;
+  }
+
+  .container {
+    margin-top: 2%;
+  }
+  .skills__text {
+    font-size: 13px;
+    padding: 2px;
+  }
+  .skills__span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 625px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutCard {
+    width: 50%;
+    height: 80px;
+    text-align: center;
+    margin: 10px 0 0;
+  }
+  .cardText {
+    padding: 0px 5px 0;
+    font-size: 12px;
+    align-text: center;
+  }
+  .skills__list {
+    margin: 15px 5% 15px;
+  }
+  .container {
+    margin-top: 5px;
+  }
+  .linkWrp {
+    display: none;
+  }
+  .about__title {
+    font-size: 20px;
+  }
+  .about__text {
+    font-size: 12px;
+  }
 }

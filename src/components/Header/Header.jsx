@@ -87,7 +87,7 @@ export const Header = () => {
             </Link>
             <img
               className={styles.headerLogo}
-              src="./images/headerLogo.png"
+              src="/images/headerLogo.png"
               alt="logo"
             ></img>
           </li>

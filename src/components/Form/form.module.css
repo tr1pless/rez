@@ -58,7 +58,7 @@ label {
   font-size: 18px;
   background-color: #43426e40;
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: inline-block;
   border: 3px solid #333333;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
@@ -199,4 +199,70 @@ label {
 
 .custom__shape__divider__top__1657791939 .shape__fill {
   fill: #2f2033;
+}
+
+@media screen and (max-width: 1024px) {
+  .form__title {
+    margin: 70px auto 0;
+    padding: 35px 0 45px 0;
+  }
+  .textArea {
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__title {
+    font-size: 30px;
+  }
+  .form {
+    width: 80%;
+  }
+  label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .form__title {
+    font-size: 20px;
+  }
+  .form {
+    width: 80%;
+  }
+  label {
+    font-size: 14px;
+  }
+  .form__buttonsAni {
+    display: flex;
+    width: 100%;
+  }
+  .submitBtn {
+    height: 25px;
+    width: 70%;
+    margin: 10px auto 20px;
+    line-height: 40px;
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  .resetBtn {
+    width: 70%;
+    margin: 10px auto 20px;
+    line-height: 40px;
+    font-size: 13px;
+    height: 25px;
+    letter-spacing: 0;
+  }
+  .resetBtn__span {
+    bottom: 10px;
+  }
+  .submitBtn__span {
+    bottom: 10px;
+  }
+  .inputs {
+    width: 90%;
+  }
+  .textArea {
+    font-size: 12px;
+  }
 }

@@ -94,3 +94,36 @@
   top: 5px;
   right: 5px;
 }
+@media screen and (max-width: 1024px) {
+  .link {
+    font-size: 14px;
+    padding: 0 0 4px 0;
+  }
+  .link:before {
+    height: 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    /* width: 768px; */
+  }
+  .link {
+    font-size: 13px;
+    padding: 0 0 3px 0;
+  }
+  .link:before {
+    height: 2px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header {
+    width: 100%;
+  }
+  .link {
+    font-size: 13px;
+    padding: 0 0 3px 0;
+  }
+  .link:before {
+    height: 2px;
+  }
+}

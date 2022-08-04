@@ -3,7 +3,7 @@ export const mainStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  backgroundImage: `url("./images/wpMain.jpg")`,
+  backgroundImage: `url("/images/wpMain.jpg")`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   height: "100vh",
@@ -21,7 +21,7 @@ export const wrapperStyle = {
 };
 
 export const formStyle = {
-  backgroundImage: `url('./images/formBackground.gif')`,
+  backgroundImage: `url('./images/formBackground.jpg')`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "center",
