@@ -1,7 +1,7 @@
 {
-  "name": "hello",
+  "name": "rez",
   "version": "0.1.0",
-  "homepage": "https://tr1pless.github.io/hello",
+  "homepage": "https://tr1pless.github.io/rez",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
