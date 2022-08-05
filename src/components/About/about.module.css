@@ -1,6 +1,6 @@
 .about__wrp {
   margin: 0;
-  height: 130vh;
+  height: 140vh;
   position: relative;
 }
 
@@ -51,7 +51,7 @@
 .skills__text {
   font-size: 15px;
   color: #b45050;
-  padding: 10px;
+  padding: 7px;
   margin: 0;
   background: #67347040;
   width: 150px;
@@ -194,7 +194,7 @@
 .linkWrp {
   display: flex;
   position: absolute;
-  top: 120vh;
+  top: 135vh;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);

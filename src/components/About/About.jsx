@@ -12,7 +12,7 @@ export const About = () => {
             offset={50}
             animateIn="fadeIn"
             animateOnce={true}
-            delay={500}
+            delay={0}
             duration={0.5}
           >
             <h1 className={styles.about__title}>About Me</h1>
@@ -22,7 +22,7 @@ export const About = () => {
             offset={50}
             animateIn="fadeIn"
             animateOnce={true}
-            delay={700}
+            delay={200}
             duration={1}
           >
             <p className={styles.about__text}>
@@ -41,7 +41,7 @@ export const About = () => {
             offset={50}
             animateIn="fadeInLeft"
             animateOnce={true}
-            delay={1000}
+            delay={200}
             duration={1}
           >
             <div className={styles.container}>
@@ -51,7 +51,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={1500}
+                  delay={400}
                   duration={2}
                 >
                   HTML
@@ -77,7 +77,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={1800}
+                  delay={600}
                   duration={2}
                 >
                   CSS
@@ -102,7 +102,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={2100}
+                  delay={800}
                   duration={2}
                 >
                   JavaScript
@@ -128,7 +128,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={2400}
+                  delay={1000}
                   duration={2}
                 >
                   React.js
@@ -153,7 +153,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={2700}
+                  delay={1200}
                   duration={2}
                 >
                   Router+Redux
@@ -177,7 +177,7 @@ export const About = () => {
               offset={50}
               animateIn="slideInLeft"
               animateOnce={true}
-              delay={2000}
+              delay={1400}
               duration={2}
             >
               <h2>
