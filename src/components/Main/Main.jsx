@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 export const Main = () => {
   return (
     <>
-      <div id="Main" style={mainStyle}>
+      <div id="Main" style={mainStyle} className={styles.main__wrp}>
         <div className={styles.main__box}>
           <p className={styles.main__text}>
             Hello! My name is

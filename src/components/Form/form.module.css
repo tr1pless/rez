@@ -212,10 +212,6 @@ label {
 }
 
 @media screen and (max-width: 768px) {
-  .form__wrp {
-    max-height: 210vh;
-    min-height: 100vh;
-  }
   .form__title {
     font-size: 30px;
   }
@@ -268,5 +264,11 @@ label {
   }
   .textArea {
     font-size: 12px;
+  }
+}
+
+@media (max-height: 1000px) {
+  .form__wrp {
+    min-height: 100vh;
   }
 }
