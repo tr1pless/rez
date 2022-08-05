@@ -355,6 +355,9 @@
   .skills__list {
     margin: 15px 5% 15px;
   }
+  .skills__text {
+    width: 100px;
+  }
   .container {
     margin-top: 5px;
   }
