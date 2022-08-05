@@ -85,7 +85,7 @@
 }
 
 .about {
-  margin: 7px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -255,6 +255,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .about__wrp {
+    min-height: 100vh;
+  }
   .about__title {
     font-size: 21px;
   }
@@ -290,12 +293,12 @@
   .skills__span {
     font-size: 14px;
   }
+  .linkWrp {
+    top: 115vh;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .about__wrp {
-    height: 115vh;
-  }
   .linkWrp {
     top: 105vh;
   }
@@ -371,3 +374,37 @@
     font-size: 12px;
   }
 }
+@media screen and (max-height: 800px) {
+  .about__wrp {
+    max-height: 200vh;
+  }
+  .linkWrp {
+    display: none;
+  }
+}
+@media screen and (max-height: 500px) {
+  .about__wrp {
+    min-height: 170vh;
+  }
+}
+
+@media screen and (min-height: 750px) and (max-width: 600px) {
+  .linkWrp {
+    display: flex;
+    top: 120vh;
+  }
+  .aboutCard {
+    width: 50%;
+    height: 120px;
+    text-align: center;
+    margin: 10px 0 0;
+  }
+  .cardText {
+    padding: 0px 5px 0;
+    font-size: 15px;
+    align-text: center;
+  }
+  .container {
+    margin-top: 4%;
+  }
+} ;

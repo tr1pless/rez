@@ -129,3 +129,8 @@ i {
     height: 40%;
   }
 }
+@media screen and (max-height: 800px) {
+  .main__wrp {
+    max-height: 200vh;
+  }
+}
