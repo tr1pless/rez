@@ -10,19 +10,3 @@ export const mainStyle = {
   backgroundPosition: "center",
   justifyContent: "center",
 };
-
-export const wrapperStyle = {
-  backgroundImage: `url('./images/aboutBackground.jpg')`,
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-  margin: "0",
-  padding: "0",
-};
-
-export const formStyle = {
-  backgroundImage: `url('./images/formBackground.jpg')`,
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center",
-};

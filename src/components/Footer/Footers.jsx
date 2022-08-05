@@ -28,17 +28,14 @@ export const Footer = () => {
             </svg>
           </Link>
         </div>
-        <p className={styles.footer__text}>
-          You can use these links to hire me or invite in your project. I'm glad
-          to become a part of your team and gain more new experience.
-        </p>
+
         <div className={styles.links__wrapper}>
           <ScrollAnimation
             offset={50}
             animateIn="bounceInLeft"
             animateOnce={true}
-            delay={1400}
-            duration={1.5}
+            delay={900}
+            duration={0.75}
           >
             <a
               className={styles.link}
@@ -63,8 +60,8 @@ export const Footer = () => {
             offset={50}
             animateIn="bounceInLeft"
             animateOnce={true}
-            delay={1100}
-            duration={1.5}
+            delay={600}
+            duration={0.75}
           >
             <a
               className={styles.link}
@@ -89,8 +86,8 @@ export const Footer = () => {
             offset={50}
             animateIn="bounceInLeft"
             animateOnce={true}
-            delay={800}
-            duration={1.5}
+            delay={300}
+            duration={0.75}
           >
             <a
               className={styles.link}
@@ -115,8 +112,8 @@ export const Footer = () => {
             offset={50}
             animateIn="bounceInLeft"
             animateOnce={true}
-            delay={500}
-            duration={1.5}
+            delay={0}
+            duration={0.75}
           >
             <a
               className={styles.link}
@@ -138,6 +135,10 @@ export const Footer = () => {
             </a>
           </ScrollAnimation>
         </div>
+        <p className={styles.footer__text}>
+          You can use these links to hire me or invite in your project. I'm glad
+          to become a part of your team and gain more new experience.
+        </p>
         <div className={styles.footer__bottomBg}>
           <svg
             className={styles.footer__botomBg__img}
