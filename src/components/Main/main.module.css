@@ -89,7 +89,7 @@ i {
 
 .custom__shape__divider__bottom__1657712270 {
   position: absolute;
-  bottom: -1vh;
+  bottom: -1%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -129,8 +129,8 @@ i {
     height: 40%;
   }
 }
-@media screen and (max-height: 800px) {
-  .main__wrp {
-    max-height: 200vh;
+@media screen and (max-height: 700px) {
+  .custom__shape__divider__bottom__1657712270 {
+    display: none;
   }
 }

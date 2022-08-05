@@ -52,7 +52,7 @@ export const Header = () => {
               spy={true}
               hashSpy={true}
               smooth={true}
-              offset={10}
+              offset={0}
               duration={500}
               isDynamic={true}
             >
@@ -87,7 +87,7 @@ export const Header = () => {
             </Link>
             <img
               className={styles.headerLogo}
-              src="/images/headerLogo.png"
+              src="/rez/images/headerLogo.png"
               alt="logo"
             ></img>
           </li>
