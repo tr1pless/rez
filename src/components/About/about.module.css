@@ -38,7 +38,7 @@
   z-index: 1;
   height: 100%;
   left: 0;
-  animation: wipe 2s 2s cubic-bezier(0.2, 0.6, 0.8, 0.4) forwards;
+  animation: wipe 1.5s 1.5s cubic-bezier(0.2, 0.4, 0.6, 0.4) forwards;
 }
 @keyframes wipe {
   0% {

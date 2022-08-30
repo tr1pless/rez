@@ -41,8 +41,8 @@ export const About = () => {
             offset={50}
             animateIn="fadeInLeft"
             animateOnce={true}
-            delay={200}
-            duration={1}
+            delay={0}
+            duration={0.5}
           >
             <div className={styles.container}>
               <div className={`${styles.skills} ${styles.html}`}>
@@ -62,7 +62,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={4000}
+                  delay={2000}
                   duration={2}
                 >
                   90%
@@ -87,7 +87,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={4100}
+                  delay={2200}
                   duration={2}
                 >
                   90%
@@ -112,7 +112,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={4200}
+                  delay={2400}
                   duration={2}
                 >
                   60%
@@ -138,7 +138,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={4300}
+                  delay={2600}
                   duration={2}
                 >
                   50%
@@ -163,7 +163,7 @@ export const About = () => {
                   offset={50}
                   animateIn="fadeIn"
                   animateOnce={true}
-                  delay={4400}
+                  delay={2800}
                   duration={2}
                 >
                   40%
