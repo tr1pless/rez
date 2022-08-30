@@ -110,6 +110,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  .shape__lastFill {
+    display: none;
+  }
   .navItem {
     margin: -8px 10px 0;
   }
