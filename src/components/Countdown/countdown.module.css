@@ -1,0 +1,88 @@
+.timerWrp {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  background: rgba(28, 50, 43, 0.18);
+  border-radius: 5px;
+  min-width: 40%;
+  max-width: 80%;
+}
+
+.timer {
+  display: flex;
+}
+.intervalWrp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 9px 10px;
+}
+
+.timer__title {
+  margin: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intervalWrp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.interval {
+  margin-bottom: 5px;
+}
+.timeIntervalWrp {
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 5px;
+  width: 64px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b87c2;
+  background: #353333;
+}
+
+.timeInterval {
+  font-size: 45px;
+}
+@media screen and (max-height: 450px) {
+  .timerWrp {
+    font-size: 12px;
+  }
+  .timeInterval {
+    font-size: 25px;
+  }
+  .timeIntervalWrp {
+    max-width: 50px;
+    padding: 3px;
+  }
+  .intervalWrp {
+    margin: 0px 4px 5px;
+  }
+  .timer__title {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .timerWrp {
+    font-size: 12px;
+  }
+  .timeInterval {
+    font-size: 25px;
+  }
+  .timeIntervalWrp {
+    max-width: 50px;
+    padding: 3px;
+  }
+  .timer__title {
+    font-size: 20px;
+  }
+  .intervalWrp {
+    margin: 0px 4px 5px;
+  }
+}
