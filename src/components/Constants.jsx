@@ -4,6 +4,7 @@ export const mainStyle = {
   flexDirection: "column",
   alignItems: "center",
   backgroundImage: `url("/rez/images/wpMain.jpg")`,
+  // backgroundImage: `url("/../images/wpMain.jpg")`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
   height: "100vh",

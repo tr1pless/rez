@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./main.module.css";
 import { mainStyle } from "../Constants";
 import { Link } from "react-scroll";
+import { Countdown } from "../Countdown/Countdown";
 
 export const Main = () => {
   return (
@@ -30,6 +31,7 @@ export const Main = () => {
             </p>
           </Link>
         </div>
+        <Countdown />
         <div className={styles.custom__shape__divider__bottom__1657712270}>
           <svg
             data-name="Layer 1"

@@ -81,5 +81,12 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"]
 }
