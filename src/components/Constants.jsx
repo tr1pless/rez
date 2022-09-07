@@ -7,7 +7,7 @@ export const mainStyle = {
   // backgroundImage: `url("/../images/wpMain.jpg")`,
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
-  height: "100vh",
+
   backgroundPosition: "center",
   justifyContent: "center",
 };
