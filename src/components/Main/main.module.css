@@ -1,3 +1,7 @@
+.main__wrp {
+  height: 100vh;
+}
+
 .welcome__text {
   color: black;
   margin: 4px 0;
@@ -134,6 +138,9 @@ i {
 }
 @media screen and (max-height: 700px) {
   .custom__shape__divider__bottom__1657712270 {
-    bottom: 0;
+    display: none;
+  }
+  .main__wrp {
+    height: 150vh;
   }
 }
