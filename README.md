@@ -1,1 +1,1 @@
-https://tr1pless.github.io/
+https://tr1pless.github.io/rez
