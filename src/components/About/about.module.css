@@ -32,13 +32,13 @@
   position: relative;
 }
 .skills::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #1a4f52;
   z-index: 1;
   height: 100%;
   left: 0;
-  animation: wipe 1.5s 1.5s cubic-bezier(0.2, 0.4, 0.6, 0.4) forwards;
+  animation: wipe 0.6s 0.5s cubic-bezier(0.2, 0.4, 0.6, 0.4) forwards;
 }
 @keyframes wipe {
   0% {
@@ -75,13 +75,13 @@
   width: 90%;
 }
 .react {
-  width: 50%;
+  width: 90%;
 }
 .js {
-  width: 60%;
+  width: 75%;
 }
 .routerRedux {
-  width: 40%;
+  width: 70%;
 }
 
 .about {
@@ -122,12 +122,9 @@
   transition: all 0.2s;
   align-items: center;
   justify-items: start;
+  transition: 0.5s;
 }
 
-.aboutCard:hover {
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-  transform: scale(1.01);
-}
 .card1,
 .card3 {
   background: radial-gradient(#129a76, #1d3746);
@@ -211,7 +208,7 @@
   position: relative;
 }
 .contact__link::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -233,7 +230,7 @@
   color: #177464;
 }
 .contact__link::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -353,7 +350,6 @@
   .cardText {
     padding: 0px 5px 0;
     font-size: 12px;
-    align-text: center;
   }
   .skills__list {
     margin: 15px 5% 15px;
@@ -402,7 +398,6 @@
   .cardText {
     padding: 0px 5px 0;
     font-size: 15px;
-    align-text: center;
   }
   .container {
     margin-top: 4%;
