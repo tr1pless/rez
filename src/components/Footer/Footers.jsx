@@ -6,7 +6,7 @@ import styles from './footer.module.css'
 export const Footer = () => {
   return (
     <>
-      <footer className={styles.footer} id='Social'>
+      <footer className={styles.footer__container} id='Social'>
         <hr className={styles.hr} />
         <div className={styles.hr__img__wrp}>
           <Link
