@@ -1,15 +1,14 @@
-import { style } from "@mui/system";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 
-import styles from "./countdown.module.css";
+import styles from './countdown.module.css'
 
 export const Countdown = () => {
-  let id = 0;
+  let id = 0
   const calculateTimeLeft = () => {
-    let year = new Date().getFullYear();
-    let difference = +new Date(`01/01/${++year}`) - +new Date();
+    let year = new Date().getFullYear()
+    let difference = +new Date(`01/01/${++year}`) - +new Date()
 
-    let timeLeft = {};
+    let timeLeft = {}
 
     if (difference > 0) {
       timeLeft = {
@@ -17,36 +16,36 @@ export const Countdown = () => {
         HOURS: Math.floor((difference / (1000 * 60 * 60)) % 24),
         MONTHS: Math.floor((difference / 1000 / 60) % 60),
         SEC: Math.floor((difference / 1000) % 60),
-      };
+      }
     }
-    return timeLeft;
-  };
+    return timeLeft
+  }
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-    return () => clearTimeout(timer);
-  });
+      setTimeLeft(calculateTimeLeft())
+    }, 1000)
+    return () => clearTimeout(timer)
+  })
 
-  const timerComponents = [];
+  const timerComponents = []
 
   Object.keys(timeLeft).forEach((interval) => {
     if (!timeLeft[interval]) {
-      return;
+      return
     }
 
     timerComponents.push(
       <div className={styles.intervalWrp} key={++id}>
-        <span className={styles.interval}>{interval}</span>{" "}
+        <span className={styles.interval}>{interval}</span>
         <div className={styles.timeIntervalWrp}>
           <span className={styles.timeInterval}>{timeLeft[interval]}</span>
         </div>
-      </div>
-    );
-  });
+      </div>,
+    )
+  })
 
   return (
     <>
@@ -57,5 +56,5 @@ export const Countdown = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
