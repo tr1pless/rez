@@ -4,9 +4,17 @@ import { Link } from 'react-scroll'
 import styles from './footer.module.css'
 
 export const Footer = () => {
+  const footerStyle = {
+    position: 'relative',
+    height: '105vh',
+    paddingTop: '100px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  }
   return (
     <>
-      <footer className={styles.footer__container} id='Social'>
+      <footer style={footerStyle} id='Social'>
         <hr className={styles.hr} />
         <div className={styles.hr__img__wrp}>
           <Link
