@@ -1,10 +1,19 @@
 .backgroundWrp {
-  background: linear-gradient(
-    90deg,
-    rgb(37 23 40) 5%,
-    rgba(13, 0, 36, 0.8970938717283788) 54%,
-    rgb(8 22 54) 100%
-  );
+  background: linear-gradient(-45deg, #030529, #451427, #072826, #08092e);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
   margin-top: -2px;
   min-height: 300vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

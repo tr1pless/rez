@@ -24,9 +24,12 @@
   align-items: center;
   height: 60vh;
   width: 67%;
-  border: 1px solid rgba(112, 13, 193, 0.459);
+  border: 1px solid rgb(112 13 193 / 8%);
   border-radius: 1%;
-  background-color: #15131978;
+  background-color: rgba(21, 19, 25, 0.4705882353);
+  -webkit-box-shadow: -5px -1px 18px 3px rgba(22, 21, 43, 0.68);
+  -moz-box-shadow: -5px -1px 18px 3px rgba(22, 21, 43, 0.68);
+  box-shadow: -5px -1px 25px 7px rgb(15 14 26 / 68%);
 }
 .form__title {
   margin: 91px auto 0;
@@ -64,9 +67,13 @@ label {
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
   background: #7e4b4b3b;
   position: relative;
+  background-color: rgba(21, 19, 25, 0.4705882353);
+  -webkit-box-shadow: -5px -1px 18px 3px rgba(22, 21, 43, 0.68);
+  -moz-box-shadow: -5px -1px 18px 3px rgba(22, 21, 43, 0.68);
+  box-shadow: -5px -1px 25px 7px rgb(15 14 26 / 68%);
 }
 .textArea::before {
-  content: "";
+  content: '';
   border: 2px solid #353535;
   display: block;
   position: absolute;
@@ -116,7 +123,7 @@ label {
 
 .submitBtn:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   width: 0;
@@ -157,7 +164,7 @@ label {
 
 .resetBtn:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   right: 0;
   width: 0;
