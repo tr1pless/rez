@@ -13,8 +13,8 @@ export const Countdown = () => {
     if (difference > 0) {
       timeLeft = {
         DAYS: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        HOURS: Math.floor((difference / (1000 * 60 * 60)) % 24),
         MONTHS: Math.floor((difference / 1000 / 60) % 60),
+        HOURS: Math.floor((difference / (1000 * 60 * 60)) % 24),
         SEC: Math.floor((difference / 1000) % 60),
       }
     }

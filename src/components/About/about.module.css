@@ -1,6 +1,11 @@
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .about__wrp {
   margin: 0;
-  height: 140vh;
+  height: min-content;
   position: relative;
 }
 
@@ -14,74 +19,6 @@
   background: rgba(182, 81, 81, 0.15);
   border: 2px solid #190d0d;
   border-radius: 0 20px 20px 0;
-}
-
-.skills {
-  text-align: center;
-  color: #b24c4c;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.skills__wrp {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-around;
-}
-.skills {
-  position: relative;
-}
-.skills::before {
-  content: '';
-  position: absolute;
-  background-color: #1a4f52;
-  z-index: 1;
-  height: 100%;
-  left: 0;
-  animation: wipe 0.6s 0.5s cubic-bezier(0.2, 0.4, 0.6, 0.4) forwards;
-}
-@keyframes wipe {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-.skills__text {
-  font-size: 15px;
-  color: #b45050;
-  padding: 7px;
-  margin: 0;
-  background: #67347040;
-  width: 150px;
-  border: 2px solid #d74949;
-  z-index: 2;
-}
-.skills__span {
-  align-self: center;
-  margin-right: 15px;
-  z-index: 2;
-}
-.skills__list {
-  width: 90%;
-  margin: 30px 5% 20px;
-}
-
-.html {
-  width: 90%;
-}
-.css {
-  width: 90%;
-}
-.react {
-  width: 90%;
-}
-.js {
-  width: 75%;
-}
-.routerRedux {
-  width: 70%;
 }
 
 .about {
@@ -102,49 +39,105 @@
   border-bottom: 5px solid #3a3865;
 }
 .features {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  margin-top: 50px;
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: min-content;
+  gap: 3% 3%;
+  grid-template-areas: '. . .';
   justify-content: center;
-}
-.aboutSkillsWrp {
-  display: flex;
+  transition: all 1s;
 }
 .aboutCard {
-  padding: 15px 0 0 10px;
-  margin: 25px 20px 0 15px;
-  width: 400px;
-  height: 150px;
-  display: grid;
-  grid-template-rows: 20px 50px 1fr 50px;
+  overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
-  transition: all 0.2s;
-  align-items: center;
-  justify-items: start;
-  transition: 0.5s;
+  text-align: center;
+  height: 140px;
+  -webkit-box-shadow: -5px -1px 18px 3px rgba(22, 21, 43, 0.68);
+  -moz-box-shadow: -5px -1px 18px 3px rgba(22, 21, 43, 0.68);
+  box-shadow: -5px -2px 15px 3px rgb(48 60 71 / 88%);
+  background: linear-gradient(135deg, #2a724e 0%, #9698b1 100%);
 }
 
-.card1,
-.card3 {
-  background: radial-gradient(#129a76, #1d3746);
+.cardTitle__wrp {
+  color: #101c27;
+  font-size: 25px;
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
 }
-.card2 {
-  background: radial-gradient(#bd5b5b, #9e3232);
+
+.showButton {
+  border: none;
+  position: absolute;
+  bottom: 5px;
+  transition: all 0.2s;
+  background: none;
+  z-index: 3;
 }
+.showButtonText {
+  transition: all 0.2s;
+  border: none;
+  position: absolute;
+  top: 5px;
+  background: none;
+  z-index: 3;
+}
+.cardText__wrp {
+  transition: all 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.cardText {
+  color: #0d0c2f;
+  font-size: 21px;
+  padding: 0 30px;
+  margin: 30px 0 5px;
+}
+
+.cardTitle .aboutSkillsWrp {
+  display: flex;
+}
+
 .about__title {
   margin-top: 70px;
   color: #96b1aa;
-}
-.cardText {
-  padding: 20px 25px 0;
-  color: #0d0c2f;
-  font-size: 21px;
 }
 .about__text {
   color: #8e7474;
   width: 98%;
   padding: 15px 15px 25px;
+}
+.skills {
+  text-align: center;
+}
+.skillsTitle {
+  color: #8e7474;
+  margin: 80px 0 50px;
+  font-size: 35px;
+}
+.skillsList {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px;
+  gap: 3% 3%;
+  grid-template-areas: '. . . . . . . .';
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .custom__shape__divider__top__1657712595 {
@@ -190,8 +183,8 @@
 }
 .linkWrp {
   display: flex;
-  position: absolute;
-  top: 135vh;
+  position: inherit;
+  margin-top: 80px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -268,7 +261,7 @@
     justify-content: center;
   }
   .aboutCard {
-    width: 250px;
+    width: 220px;
     height: 120px;
   }
   .cardText {
@@ -290,15 +283,9 @@
   .skills__span {
     font-size: 14px;
   }
-  .linkWrp {
-    top: 115vh;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .linkWrp {
-    top: 105vh;
-  }
   .about__title {
     font-size: 20px;
   }
@@ -312,7 +299,7 @@
     justify-content: center;
   }
   .aboutCard {
-    width: 240px;
+    width: 180px;
     height: 120px;
   }
   .cardText {
@@ -337,13 +324,27 @@
 }
 
 @media (max-width: 625px) {
+  .cardTitle__wrp {
+    align-items: flex-start;
+  }
+  .cartTittleImg {
+    margin-top: 20px;
+  }
   .features {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: 60%;
+    grid-template-rows: min-content min-content min-content;
+    gap: 10% 3%;
+    grid-template-areas:
+      '.'
+      '.'
+      '.';
+    justify-items: center;
   }
   .aboutCard {
-    width: 50%;
-    height: 80px;
+    width: 60%;
+    height: 90px;
     text-align: center;
     margin: 10px 0 0;
   }
@@ -351,18 +352,19 @@
     padding: 0px 5px 0;
     font-size: 12px;
   }
-  .skills__list {
-    margin: 15px 5% 15px;
+  .skillsList {
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+      '. . . .'
+      '. . . .';
+    gap: 20% 12%;
   }
-  .skills__text {
-    width: 100px;
-  }
+
   .container {
     margin-top: 5px;
   }
-  .linkWrp {
-    display: none;
-  }
+
   .about__title {
     font-size: 20px;
   }
@@ -374,9 +376,6 @@
   .about__wrp {
     max-height: 200vh;
   }
-  .linkWrp {
-    display: none;
-  }
 }
 @media screen and (max-height: 500px) {
   .about__wrp {
@@ -387,7 +386,6 @@
 @media screen and (min-height: 750px) and (max-width: 600px) {
   .linkWrp {
     display: flex;
-    top: 120vh;
   }
   .aboutCard {
     width: 50%;

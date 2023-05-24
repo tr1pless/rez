@@ -1,10 +1,10 @@
-import React from "react";
-import { About } from "./About/About";
-import { Footer } from "./Footer/Footers";
-import { FormComponent } from "./Form/Form";
-import { Header } from "./Header/Header";
-import { Main } from "./Main/Main";
-import styles from "./appRouter.module.css";
+import React from 'react'
+import { About } from './About/About'
+import { Footer } from './Footer/Footers'
+import { FormComponent } from './Form/Form'
+import { Header } from './Header/Header'
+import { Main } from './Main/Main'
+import styles from './appRouter.module.css'
 
 export const AppRouter = () => {
   return (
@@ -13,10 +13,9 @@ export const AppRouter = () => {
       <Main />
       <div className={styles.backgroundWrp}>
         <About />
-        {/* <Skills /> */}
         <FormComponent />
         <Footer />
       </div>
     </>
-  );
-};
+  )
+}
