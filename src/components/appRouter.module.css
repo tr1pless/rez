@@ -3,7 +3,7 @@
   background-size: 400% 400%;
   animation: gradient 5s ease infinite;
   margin-top: -2px;
-  min-height: 300vh;
+  min-height: min-content;
 }
 
 @keyframes gradient {
