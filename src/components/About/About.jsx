@@ -13,6 +13,7 @@ import {
   redux,
   router,
 } from '../Constants'
+import { Projects } from './Projects'
 
 export const About = () => {
   const [active, setActive] = useState([
@@ -359,6 +360,8 @@ export const About = () => {
             <li>{mongo}</li>
           </ul>
         </div>
+        <Projects />
+
         <div className={styles.linkWrp}>
           <Link
             className={styles.contact__link}

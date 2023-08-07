@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "title": "Shoes repairing.",
+      "description": "E-comerce shoes repairing,tools sharping and key service project",
+      "stack": "React, react-redux, react-router.",
+      "url": "https://juglasdarbnica.com/",
+      "img": "/../images/shoes.jpg"
+    },
+    {
+      "title": "Todo.",
+      "description": "Simple todo MERN stack todo project with JWT authentification",
+      "url": "https://jwtauthtodo.online/",
+      "stack": "React, Node.js, Json web token authentification, MongoDB, Mobx, Typescript",
+      "img": "/../images/todo.jpg"
+    },
+    {
+      "title": "Cart.",
+      "description": "reusable, adaptive for any device cart component",
+      "url": "https://master--legendary-churros-68decc.netlify.app/",
+      "stack": "React,Redux",
+      "img": "/../images/cart.jpg"
+    },
+    {
+      "title": "Pomodoro timer.",
+      "description": "Simple react pomodoro timer.",
+      "stack": "React",
+      "url": "https://tranquil-buttercream-a30ca0.netlify.app/",
+      "img": "/../images/timer.jpg"
+    }
+  ]
+}
