@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "id": 1,
       "title": "Shoes repairing.",
       "description": "E-comerce shoes repairing,tools sharping and key service project",
       "stack": "React, react-redux, react-router.",
@@ -8,6 +9,7 @@
       "img": "/../images/shoes.jpg"
     },
     {
+      "id": 2,
       "title": "Todo.",
       "description": "Simple todo MERN stack todo project with JWT authentification",
       "url": "https://jwtauthtodo.online/",
@@ -15,6 +17,7 @@
       "img": "/../images/todo.jpg"
     },
     {
+      "id": 3,
       "title": "Cart.",
       "description": "reusable, adaptive for any device cart component",
       "url": "https://master--legendary-churros-68decc.netlify.app/",
@@ -22,6 +25,7 @@
       "img": "/../images/cart.jpg"
     },
     {
+      "id": 4,
       "title": "Pomodoro timer.",
       "description": "Simple react pomodoro timer.",
       "stack": "React",

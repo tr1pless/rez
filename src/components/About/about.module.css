@@ -404,12 +404,23 @@ li {
   }
 }
 
-.projects {
+.projectsNav {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 250px;
   align-content: center;
+  flex-direction: column;
+  margin: 50px 0 0;
+  background: gray;
+  width: min-content;
+  min-width: 150px;
+}
+.projectsNavBtn {
+  height: 40px;
+  background: none;
+  border: none;
+  border-radius: 21px 0 0 21px;
 }
 
 .projectItem {
