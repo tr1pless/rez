@@ -361,7 +361,6 @@ export const About = () => {
           </ul>
         </div>
         <Projects />
-
         <div className={styles.linkWrp}>
           <Link
             className={styles.contact__link}
